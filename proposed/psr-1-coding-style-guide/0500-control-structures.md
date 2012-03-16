@@ -37,7 +37,7 @@ Always use braces to enclose the body of the statements. This standardizes
 how they look and reduces the likelihood of introducing errors as new lines
 get added to the body.
 
-Do not perform variable assignment within `if` or `elseif` expressions. This
+Avoid performing variable assignment within `if` or `elseif` expressions. This
 reduces the difficulty of determining if the intent was to assign or to check
 equivalence. For example, this ...
 
@@ -60,8 +60,8 @@ equivalence. For example, this ...
 
 A switch statement looks like the following. Note the placement of
 parentheses, spaces, and braces; the indent levels for `case` and `break`
-statements; and the presence of a `// no break` comment when a break is
-intentionally omitted.
+statements. Use of a `// no break` comment when a break is intentionally omitted
+is recommended for clarity.
 
     <?php
     switch ($expression) {
@@ -75,6 +75,10 @@ intentionally omitted.
             echo 'Default case';
         break;
     }
+
+Optionally, `break` statements may be indented one additional level to align
+them with the contents of the `case`. Each project should be internally
+consistent with regards to this decision.
 
 Do not perform variable assignment within `switch` expressions. This reduces
 the difficulty of determining if the intent was to assign or to check

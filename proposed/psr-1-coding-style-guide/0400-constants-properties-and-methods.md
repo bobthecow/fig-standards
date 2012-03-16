@@ -32,8 +32,7 @@ Whatever naming convention is used should be applied consistently within a
 reasonable scope. That scope may be vendor-level, package-level, class-level,
 or function-level.
 
-Prefix all properties with a visibility declaration. The `static` declaration,
-when present, goes before the visibility declaration.
+Prefix all properties with a visibility declaration.
 
     <?php
     namespace Vendor\Package;
@@ -84,9 +83,9 @@ when present, goes before the visibility declaration.
 
 Arguments with default values always go at the end of the argument list.
 
-Argument lists that exceed the line length limit may be split across
-subsequent indented lines. There is only one argument per line. The closing
-parenthesis and opening brace are placed together on their own line.
+Argument lists that exceed 80 characters may be split across subsequent indented
+lines. There is only one argument per line. The closing parenthesis and opening
+brace are placed together on their own line.
 
     <?php
     namespace Vendor\Package;

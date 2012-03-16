@@ -37,9 +37,9 @@ class go on their own line.
 The `extends` and `implements` keywords should be on the same line as the
 class name.
 
-Lists of `implements` that exceed the line length limit may be split across
-multiple lines, where each subsequent line is indented once. List only one
-interface per line.
+Lists of `implements` that exceed 80 characters may be split across multiple
+lines, where each subsequent line is indented once. List only one interface
+per line.
 
     <?php
     namespace Vendor\Package;

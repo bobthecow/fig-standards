@@ -16,8 +16,8 @@ guide for details.
 - Use only `<?php` and `<?=` opening tags for PHP code; leave out the closing
   `?>` tag when the file contains only PHP code.
 
-- Limit line length to 80 characters; use 4 spaces for indenting, not tabs;
-  do not add trailing spaces at the end of lines.
+- Consider wrapping lines longer than 80 characters; use 4 spaces or 1 tab for
+  indenting; do not add trailing spaces at the end of lines.
 
 - Namespace all classes; place one blank line after the `namespace`
   declaration, and one blank line after the block of `use` declarations.
@@ -28,8 +28,7 @@ guide for details.
 - Declare method names in `camelCase`; opening braces for methods go on the
   next line, and closing braces go on their own line.
 
-- Declare visibility on all properties and methods; static declarations come
-  before the visbility declaration.
+- Declare visibility on all properties and methods.
   
 - Control structure keywords have one space after them; function calls do not.
 
